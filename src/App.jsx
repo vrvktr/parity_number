@@ -27,6 +27,7 @@ const App = () => {
         <h2>Even or Odd Checker</h2>
 
         <input
+          name="number"
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
