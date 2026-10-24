@@ -1,0 +1,112 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2933;
+  background: #edf0f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #edf0f3;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf0f3;
+  padding: 24px;
+}
+
+.checker-card {
+  width: min(100%, 520px);
+  background: rgba(248, 248, 248, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 18px 18px 20px;
+}
+
+.checker-card h2 {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 2.1rem);
+  font-weight: 700;
+  color: #1f2933;
+}
+
+.checker-card input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #2b2b2b;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.checker-card input::placeholder {
+  color: rgba(82, 90, 98, 0.75);
+}
+
+.checker-card input:focus {
+  border-color: #8aaae4;
+  box-shadow: 0 0 0 2px rgba(65, 120, 224, 0.12);
+}
+
+.checker-card button {
+  width: 100%;
+  height: 46px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 6px;
+  background: #0d6fe8;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(13, 111, 232, 0.28);
+}
+
+.checker-card button:hover {
+  background: #0b64d7;
+}
+
+.result {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0d5f7a;
+}
+
+@media (max-width: 560px) {
+  .checker-card {
+    padding: 16px 14px 18px;
+  }
+}
